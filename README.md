@@ -1,6 +1,6 @@
 # HC Comes First
 
-![](/home/fabiano_basso/Área de Trabalho/Cursos de Programação/HcCustomer/show.gif)
+![](show.gif)
 
 Sobre HC Comes First:
 
