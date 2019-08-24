@@ -1,0 +1,9 @@
+--------------------------------
+      Lista de erros
+---------------------------------
+cadastro:
+erro 1 = Usuario já existe.
+
+Login:
+erro 2 = Senha Inválida.
+erro 3 = Usuário não exite.

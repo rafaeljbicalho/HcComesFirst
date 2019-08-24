@@ -1,0 +1,207 @@
+/* body {
+    background-color: grey;
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+} */
+
+body,
+html {
+    /* width: 100%;
+    height: 100%;  */
+    /*responsável pelo tamanho da imagem */
+    font-family: "Lato";
+    color: white;
+}
+
+h1, h3 {
+	font-weight: 700;
+	font-size: 5em;
+}
+
+
+.content{
+	/* padding-top: 25%; */
+	text-align: center;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+hr {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+#form {
+  padding-top: 10%;
+}
+
+#botaoCadastro {
+  margin-left: 1.3%;
+}
+
+/* Campos de login */
+#inputLogin {
+  width: 30%; /*tamanho do input */
+  /* padding-left: 80px; */
+  margin-left: 30%;
+
+}
+
+/* jumbotron da aba sobre */
+#jumbotron-sobre {
+  color: black;
+  margin-top: 10%;
+}
+
+/* jumbotron da aba sobre, porém somente o texto */
+#jumbotron-sobre-1 {
+  color: black;
+}
+
+/* background com overlay */
+.bg-overlay {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://static1.squarespace.com/static/53bc9d16e4b0b6f1419f6dda/5577d2f4e4b02cd823dffbb1/5577d392e4b09afb6cef3a8e/1433916313909/bigstock-Customer-Satisfaction-Survey-46621366.jpg?format=1500w");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 100%;
+    width: 100;
+    padding-top: 50px;
+}
+
+/* exclusivo para o modal */
+.black {
+  color: black;
+  font-family: "Lato";
+}
+
+/* exclusivo para o botão do modal */
+#botao {
+  padding-top: 2%;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+  background-color: black;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+.carousel-inner > .item > a > img {
+  min-height: 1000px;    /* Set slide height here */
+
+}
+
+#index-especial {
+  background-color: grey;
+}
+
+/* erros do login */
+.error {
+  font-family: "Lato";
+  font-size: 15px;
+  color: red;
+}
+
+#myModalLabel {
+  text-align: center;
+}
+
+/* ajustes das páginas de pesquia */
+.pesquisa {
+  color: black;
+  text-align: justify;
+  font-family: "Lato";
+}
+
+/* alinha o texto com o botão radio */
+input[type="radio"]{
+    vertical-align: sub;
+}
+
+#pesquisaBody {
+  background-color:LightGray;
+}
+
+/* altera cor do jumbotron */
+#colorJumbotron{
+  margin-top: 2%;
+  background:white !important;
+}
+
+/* hr da pesquisa */
+#hr2 {
+  width: 90%;
+}
+
+/* pagina como funciona */
+featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* pagina como funciona */
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+/* ajustes da tabela */
+table {
+    font-family: Lato;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #grey;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #F5F5F5;
+}
+/* fim ajustes tabela */
+
+
+#imagens {
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Pagina dados do usuario */
+#mostradado{
+
+  background-color: black;
+  color: black;
+}
+.color-fundo{
+
+
+}

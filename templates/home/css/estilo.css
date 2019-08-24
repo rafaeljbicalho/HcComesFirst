@@ -1,0 +1,193 @@
+/*
+* @author Fabiano Basso
+* @version 1.0
+*
+*/
+
+/* ========================= layout ========================== */
+html, body, .telaInicial{
+  height: 100%;
+}
+@@font-face {
+  font-family: "ubuntu";
+  src: url("../fonts/Ubuntu-Regular.ttf"); /*Para IE*/
+  src: local("ubuntu"), url("../fonts/Ubuntu-Regular.ttf") format("opentype");
+}
+body{
+  background: url('../img/bg.png'), linear-gradient(50deg, #87CEFA, #00008B);
+  /* background: linear-gradient(50deg, #00bfff, #4682b4); */
+  background-attachment: fixed;
+  font-family: "ubuntu", cursive;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  /* background-size:100%;
+  bottom: 0;
+  color: black;
+  left: 0;
+  overflow: auto;
+  position: absolute;
+  right: 0;
+  top: 0; */
+}
+
+/* -- Barra de navegação */
+.img-logo{
+  height: 40px;
+  width: 40px;
+  /*  display: block -> para mostrar como bloco em span */
+  display: block;
+  background: url('../img/hcf.svg' ) no-repeat;
+  /* contain -> mostra a imagem do tamanho que foi definida */
+  background-size: contain;
+  /* Deixa o texto invisivel */
+  color: transparent;
+}
+.img-log{
+  height: 40px;
+  width: 40px;
+  /*  display: block -> para mostrar como bloco em span */
+  display: block;
+  background: url('../img/user.svg' ) no-repeat;
+  /* contain -> mostra a imagem do tamanho que foi definida */
+  background-size: contain;
+  /* Deixa o texto invisivel */
+  color: transparent;
+}
+
+.bgDiv{
+  background: rgba(70, 130, 180, 0.5);
+}
+/* seleciona o nav para criar uma nova classe */
+nav.navbar-transparente{
+  /* padding: 2px 0px; */
+  height: 45px;
+  margin: 0 auto;
+  background: rgba(70, 130, 180, 0.5);
+  border: none;
+}
+/* Mudar estilo do link navbar-nav */
+.navbar-nav >a{
+  text-decoration: none;
+  color: white;
+  padding: 10px 10px;
+}
+.navbar-nav >a:link{
+  color: white;
+}
+
+.navbar-nav >a:hover{
+  color: white;
+  background: rgba(100, 149, 237, 0.5);
+}
+.navbar-nav >a:active{
+  color: white;
+  background: rgba(100, 149, 237, 0.5);
+}
+/* Fim Mudar estilo do link navbar-nav */
+/* Mudar estilo do link dropdown-menu */
+.dropdown-menu >a{
+  text-decoration: none;
+  color: white;
+  padding: 10px 10px;
+}
+.dropdown-menu >a:link{
+  color: white;
+}
+.dropdown-menu >a:hover{
+  color: white;
+  background: rgba(100, 149, 237, 0.5);
+}
+.dropdown-menu >a:active{
+  color: white;
+  background: rgba(100, 149, 237, 0.5);
+}
+/* Fim Mudar estilo do link dropdown-menu */
+.dropdown-menu {
+  margin: 0px auto;
+}
+/* -- Fim Barra de navegação */
+/* Logo */
+.navbar-brand{
+  padding: 5px 2px;
+}
+/* Fim Logo */
+/* Criar Linha Vertical */
+.linhaVertical{
+  height: 45px;
+  border-left: 2px solid;
+  border-color: #000080;
+  padding: 0px 10px;
+}
+/* Fim Criar Linha Vertical */
+
+/* Formata texto nome da empresa */
+.titulo{
+  color: #000080;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* Fim Formata texto nome da empresa */
+/* formata texto email empresa */
+.emailEmpresa{
+  color: #000080;
+  font-weight: bold;
+}
+
+/* Área inicial */
+#telaInicial{
+  margin: 80px 10px;
+  width:95%;
+}
+.text-telaInicial{
+  text-align: left;
+  color: white;
+}
+/* Informação tela principal */
+#infoPrincipal{
+  /* border: 2px solid white; */
+  margin-left: 10px;
+  width: 95%;
+}
+.bloco1{
+  margin-left: 30px;
+  width: 800px;
+  height: 20px;
+}
+.boasVindas{
+
+}
+.boasVindas h1{
+  height: 40px;
+  padding: 10px 5px;
+  border-bottom: 2px solid white;
+  font-size: 20px;
+  letter-spacing: -0.05em;
+  background: rgba(106, 90, 205, 0.2);
+  color: #000080;
+}
+.boasVindas p{
+  padding: 10px 50px;
+  color: white;
+  letter-spacing: -0.05em;
+}
+.caixaInfo {
+  border: 2px solid;
+  border-color: #00008B;
+  border-radius: 15px;
+}
+
+
+/* ========================= tipo grafia ========================== */
+h1 {
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+}
+hr{
+  margin: 0 10px 0 0;
+  border: 1px solid;
+  width: 100%;
+}
+#telaInicial hr{
+  border-color: #00008B;
+}

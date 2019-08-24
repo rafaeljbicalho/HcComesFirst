@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HC comes first - Como funcionacontato</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../css/design.css">
+</head>
+
+<body>
+  <!-- inicio nav bar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+        <a class="navbar-brand" href="../index">HC Comes First</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="../index">Página Inicial</a></li>
+          <li><a href="sobre">Sobre</a></li>
+          <li class="active"><a href="como-funciona">Como funciona</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" data-toggle="modal" data-target="#myModal">Cadastre-se  <i class="fa fa-user-plus"></i></a></li>
+          <li><a href="#" data-toggle="modal" data-target="#mySecondModal">Faça seu login  <i class="fa fa-user"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- fim nav bar -->
+
+  <div class="bg-overlay">    <!-- set background -->
+    <div class="row text-center">
+      <h2>Sua pesquisa online rapidamente.</h2>
+      <h4>Primeiro passo: Cadastro</h4>
+      <h4>Cadastra-se em nosso sistema.</h4>
+      <hr>
+      <h4>Segundo passo: Elaboração</h4>
+      <h4>Crie suas perguntas.</h4>
+      <hr>
+      <h4>Terceiro passo: Divulgação</h4>
+      <h4>Disponibilize sua pesquisa aos seus usuários.</h4>
+      <hr>
+      <h4>Quarto passo: Feedback</h4>
+      <h4>Disponibilize sua pesquisa aos seus usuários.</h4>
+      <hr>
+      <h4>Quinto passo: Resultados</h4>
+      <h4>Análise os resultados para buscar a melhoria de seus produtos e serviços.</h4>
+      <hr>
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Comece agora!</button>
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mySecondModal">Já sou cadastrado</button>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+                     <span aria-hidden="true">&times;</span>
+                     <span class="sr-only">Close</span></button>
+          <h4 class="black" class="modal-title" id="myModalLabel">Seja um membro do HC - Cadastro</h4>
+        </div>
+
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+
+          <form method="post" action="func/cadastro" id="formCadastro" role="form">
+            <!-- nome da empresa -->
+            <div class="black" class="form-group">
+              <label for="nomeEmpresa">Nome da Empresa</label>
+              <input type="text" class="form-control" id="nomeEmpresa" name="nomeEmpresa" placeholder="Nome da empresa" required="requiored">
+            </div>
+            <!-- email -->
+            <div class="black" class="form-group">
+              <label for="emailContato">Email</label>
+              <input type="email" class="form-control" id="emailContato" name="emailContato" placeholder="Email" required="requiored">
+            </div>
+            <!-- senha -->
+            <div class="black" class="form-group">
+              <label for="senha">Senha</label>
+              <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite a senha" required="requiored">
+            </div>
+            <!-- tipo de conta -->
+            <div class="black" class="form-group">
+              <label for="tipoConta">Tipo de Conta</label>
+              <select class="form-control" id="tipoConta" name="tipoConta" required="requiored">
+                    <option selected></option>
+                    <option>Grátis</option>
+                </select>
+            </div>
+            <!-- Ramo de atividade -->
+            <div class="black" class="form-group">
+              <label for="ramoAtividade">Ramo de Atividade</label>
+              <select class="form-control" id="ramoAtividade" name="ramoAtividade" required="requiored">
+                    <option selected></option>
+                    <option>Hotél</option>
+                    <option>Restaurante</option>
+                    <option>Instituição de Ensino</option>
+                </select>
+            </div>
+            <!-- <div class="checkbox">
+            <label>
+            <input type="checkbox"/> Check me out
+            </label>
+          </div> -->
+            <div id="botao">
+              <button type="submit" class="btn btn-primary">Cadastre-se</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fim do modal -->
+
+  <!-- Modal Login -->
+  <div class="modal fade" id="mySecondModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+                   <span aria-hidden="true">&times;</span>
+                   <span class="sr-only">Close</span></button>
+          <h4 class="black" class="modal-title" id="myModalLabel">Seja bem vindo, faça seu login</h4>
+        </div>
+
+        <!-- Modal Login Body -->
+        <div class="modal-body">
+
+          <form method="post" action="func/validarAcesso" id="formValidadaeAcesso" role="form">
+            <!-- email -->
+            <div class="black" class="form-group">
+              <label for="emailContato">Email</label>
+              <input type="email" class="form-control" id="emailContato" name="emailContato" placeholder="Email" required="requiored">
+            </div>
+            <!-- Fim email -->
+
+            <!-- senha -->
+            <div class="black" class="form-group">
+              <label for="senha">Senha</label>
+              <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite a senha" required="requiored">
+            </div>
+            <!-- Fim senha -->
+
+            <!-- botão validar acesso -->
+            <div id="botao">
+              <button type="submit" class="btn btn-primary">Login</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            </div>
+            <!-- Fim botão validar acesso -->
+
+          </form>
+        </div><!-- Fim Modal Login Body -->
+
+            <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+            <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
